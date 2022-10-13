@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@600&family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@800&family=Inconsolata&display=swap');
 
 * {
   margin: 0;
@@ -9,9 +9,44 @@
 }
 
 body {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: #f4f4f4;
 }
 
 main section img {
   width: 150px;
+}
+
+h1, h2 {
+  font-family: 'baloo da 2';
+  margin: 20px 0 5px 0;
+}
+
+p{
+  font-family: 'Inconsolata';
+  font-size: 1.2rem;
+}
+
+.btn {
+  width: 300px;
+  height: 30px;
+  margin: 20px;
+  font-family: 'Inconsolata';
+  border-radius: 4px;
+  border: 2px solid #00e95e;
+  background-color: transparent;
+}
+
+.border-gradient {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
+
+}
+
+.espacamento {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.secao {
+  height: 450px;
 }
