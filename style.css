@@ -12,11 +12,11 @@ body {
   background-color: #f4f4f4;
 }
 
-main section img {
-  width: 150px;
+.img-size {
+  width: 125px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'baloo da 2';
   margin: 20px 0 5px 0;
 }
@@ -24,6 +24,15 @@ h1, h2 {
 p{
   font-family: 'Inconsolata';
   font-size: 1.2rem;
+}
+
+.list {
+  margin-bottom: 40px;
+  font-family: 'Inconsolata';
+}
+
+.certificate {
+  padding: 10px;
 }
 
 .btn {
@@ -43,10 +52,7 @@ p{
 }
 
 .espacamento {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.secao {
-  height: 450px;
+  min-width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
