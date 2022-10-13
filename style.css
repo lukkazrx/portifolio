@@ -6,6 +6,8 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  color:#1e1e1e;
+  
 }
 
 body {
@@ -26,33 +28,134 @@ p{
   font-size: 1.2rem;
 }
 
+.logo {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#logo-text {
+  margin: 0 0 0 0;
+}
+
+.border-gradient {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
+}
+
 .list {
   margin-bottom: 40px;
   font-family: 'Inconsolata';
+}
+
+
+/* section first-screen*/
+.first-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.first-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 75px auto 60px auto;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+#subtittle {
+  text-align: start;
+}
+
+.about-img {
+  width: 100px;
+}
+
+.swipper {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  min-width: 100px;
+  max-width: 300px;
+  height: 350px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.iframecard {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  width: 90%;
+  height: 55%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);}
+
+.card-description {
+  width: 90%;
+  height: 40%;
 }
 
 .certificate {
   padding: 10px;
 }
 
+.certificates {
+  padding: 10px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
 .btn {
-  width: 300px;
   height: 30px;
-  margin: 20px;
+  margin: 60px;
+  min-width: 240px;
   font-family: 'Inconsolata';
-  border-radius: 4px;
+  border-radius: 8px;
   border: 2px solid #00e95e;
   background-color: transparent;
 }
 
-.border-gradient {
-  border-bottom: 2px solid;
-  border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
 
+.contact-img {
+  display: flex;
+  justify-content: flex;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .espacamento {
   min-width: 300px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+footer p {
+  text-align: center;
 }
