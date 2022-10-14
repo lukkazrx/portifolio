@@ -15,7 +15,7 @@ body {
 }
 
 .img-size {
-  width: 125px;
+ width: 200px;
 }
 
 h1, h2, h3 {
@@ -31,10 +31,15 @@ p{
 .logo {
   padding-left: 10%;
   padding-right: 10%;
+  display: flex;
 }
 
 #logo-text {
   margin: 0 0 0 0;
+}
+
+.navegation-list {
+  display: none;
 }
 
 .border-gradient {
@@ -61,26 +66,32 @@ p{
 /* section first-screen*/
 .first-screen {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
-.first-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 75px auto 60px auto;
+.img-data {
+  min-width: 200px;
+  max-width: 30%;
+  margin: 60px auto 60px auto;
+}
+
+.informations {
+  max-width: 100%;
 }
 
 .btn {
   height: 30px;
-  margin: 60px;
   min-width: 240px;
+  margin-top: 20px;
   font-family: 'Inconsolata';
   border-radius: 8px;
   border: 2px solid #00e95e;
   background-color: transparent;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
@@ -103,7 +114,8 @@ p{
 }
 
 .about-img {
-  width: 100px;
+  min-width: 150px;
+  max-width: 15%;
 }
 
 /*  section projects */
@@ -119,7 +131,6 @@ p{
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  min-width: 100%;
   max-width: 300px;
   height: 100%;
   margin-top: 25px;
@@ -150,22 +161,26 @@ p{
   width: 100%;
   margin-top: 30px;
   font-family: 'Inconsolata';
-  border-radius: 8px;
-  border: 2px solid #00e95e;
+  border: 2px solid;
+  border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
   background-color: transparent;
 }
 
 .btn-card:hover {
   background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
-  border: 1px solid #00befc;
+  border: 2px solid #00befc;
   color: #f4f4f4;
 }
 
 /* section certificate */
 .certificates {
-  padding: 10px;
-  max-width: 400px;
-  margin: 20px 0 30px;
+  max-width: 100%;
+  padding-bottom: 5%;
+}
+
+
+.certificates-img {
+  max-width: 420px;
 }
 
 /* section contact */
@@ -189,4 +204,75 @@ p{
 
 footer p {
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    justify-content: space-between;
+  }
+  .navegation-list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navegation-list2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+}
+
+@media (min-width: 992px) {
+  h1, h2, h3 {
+    font-family: 'baloo da 2';
+    margin: 20px 0 5px 0;
+    font-size: 35px;
+  }
+
+
+  .img-data {
+    max-width: 400px;
+  }
+  .first-screen {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #tittle {
+    font-size: 3.5rem;
+    line-height: 90%;
+  }
+
+  .btn {
+    margin-top: 200px;
+    height: 40px;
+  }
+
+  .informations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+    max-height: 100%;
+    padding: 0 0 5% 0;
+  }
+  .informations p {
+    margin-top: 20px;
+  }
+
+  .certificate {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .certificates {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
