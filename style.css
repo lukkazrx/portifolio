@@ -7,11 +7,13 @@
   text-decoration: none;
   list-style: none;
   color:#1e1e1e;
-  
+  scroll-behavior: smooth;
 }
 
+
 body {
-  background-color: #f4f4f4;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
 }
 
 .img-size {
@@ -73,8 +75,8 @@ p{
 .img-data {
   min-width: 200px;
   max-width: 30%;
-  margin: 60px auto 60px auto;
-  animation: dataAnimation 5000ms linear infinite;
+  margin: auto;
+  animation: dataAnimation 9000ms linear infinite;
 }
 
 @keyframes dataAnimation {
@@ -88,7 +90,7 @@ p{
 .btn {
   height: 30px;
   min-width: 240px;
-  margin-top: 20px;
+  margin: 10%;
   font-family: 'Inconsolata';
   border-radius: 8px;
   border: 2px solid #00e95e;
@@ -101,7 +103,7 @@ p{
 
 .btn:hover {
   background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
-  border: 1px solid #00befc;
+  border: 2px solid #00befc;
   color: #f4f4f4;
 }
 
@@ -167,11 +169,10 @@ p{
   width: 100%;
   margin-top: 30px;
   font-family: 'Inconsolata';
-  border: 2px solid;
-  border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
+  border: 2px solid #00e95e;
+  border-radius: 8px;
   background-color: transparent;
 }
-
 
 .btn-card:hover {
   background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
@@ -215,23 +216,56 @@ footer p {
 
 @media (min-width: 576px) {
   .logo {
+    display: flex;
     justify-content: space-between;
   }
   .navegation-list {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
+    width: 50%;
+    display: block;
   }
   .navegation-list2 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    margin: 10px 0 10px 0;
   }
-
+  .itens {
+    margin: 1%;
+  }
+  .itens a:hover {
+    color: #00e95e;
+  }
+  .itens:hover {
+    color: #00e95e;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 992px) {
+  .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  #logo-text {
+    width: 50%;
+  }
+  .navegation-list {
+    width: 50%;
+    display: block;
+  }
+  .navegation-list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0 12px 0;
+  }
+  .itens {
+    margin: 1%;
+  }
+  .itens a:hover {
+    color: #00e95e;
+  }
+
   h1, h2, h3 {
     font-family: 'baloo da 2';
     margin: 20px 0 5px 0;
@@ -299,5 +333,15 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .img-size {
+    width: 300px;
   }
 }

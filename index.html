@@ -6,38 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <meta name="theme-color" content="#1e1e1e" />
-  <link rel="shortcut icon" href="./img/Python-logo-notextvg.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/faviconmg.svg" type="image/x-icon">
   <title>Portifólio DevLukkazrx</title>
 </head>
 <body>
   <header>
     <nav class="logo border-gradient">
       <h2 id="logo-text">lucas_nunes.py</h2>
-      <!--
       <div class="navegation-list">
-        <ul class="navegation-list2 list">
-          <li class="itens">sobre</li>
-          <li class="itens">projetos</li>
-          <li class="itens">certificados</li>
-          <li class="itens">contato</li>
-        </ul>
+          <ul class="navegation-list2 list">
+            <li class="itens"><a target="_blank" href="https://github.com/lukkazrx">github</a></li>
+            <li class="itens"><a href="#section-two">sobre</a></li>
+            <li class="itens"><a href="#section-three">projetos</a></li>
+            <li class="itens"><a href="#section-four">certificados</a></li>
+            <li class="itens"><a href="#section-five">contato</a></li>
+          </ul>
       </div>
-      -->
     </nav>
   </header>
   <main>
     <!-- Primeira tela-->
     <section class="first-screen border-gradient espacamento secao">
-      <img class="img-data" src="./img/datascienceimg.svg" alt="Data Science image">
+      <img class="img-data" src="./img/datascienceimg2.svg" alt="Data Science image">
       <div class="informations">
           <h1 id="tittle">DATA SCIENCE WITH PYTHON</h1>
           <p>seja bem-vindo! venha conhecer um pouco mais sobre a trajetória do Lucas Ribeiro Nunes</p>
-            <div class="btn"><a href="">github</a></div>
+            <button onclick="window.location='https://github.com/lukkazrx';" value="click here" class="btn">GitHub</button>
       </div>
     </section>
 
     <!-- Segunda tela -->
-    <section class="border-gradient espacamento secao">
+    <section id="section-two" class="border-gradient espacamento secao">
       <h2 id="subtittle">SOBRE</h2>
       <div class="about">
           <img class="about-img" src="./img/profileimg.svg" alt="">
@@ -53,16 +52,24 @@
              <h3>DATA SCIENCE e PYTHON</h3>
              <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-               Labore magni officiis temporibus, consequatur sequi quisquam quod laboriosam laborum enim libero nostrum officia iste facere perspiciatis iure. Laboriosam autem iusto natus.
+               Labore magni officiis temporibus, consequatur sequi quisquam
+                quod laboriosam laborum enim libero nostrum officia iste facere perspiciatis iure. 
+                Laboriosam autem iusto natus.
+             </p>
+                          <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+               Labore magni officiis temporibus, consequatur sequi quisquam
+                quod laboriosam laborum enim libero nostrum officia iste facere perspiciatis iure. 
+                Laboriosam autem iusto natus.
              </p>
           </div>
       </div>
     </section>
 
     <!-- Terceira tela -->
-    <section class="projects border-gradient espacamento secao">
+    <section id="section-three" class="projects border-gradient espacamento secao">
       <h2>PROJETOS</h2>
-      <p>todos os meus projetos estão disponiveis no meu github</p>
+      <p>(todos os meus projetos estão disponíveis no meu github)</p>
       <div class="card-container">
         <div class="card">
           <div class="iframecard">
@@ -71,7 +78,7 @@
           <div class="card-description">
             <h3>AFX Movie</h3>
             <p>O primeiro site que eu criei com Bootstrap</p>
-            <button class="btn-card"><a href="https://lukkazrx.github.io/AFXMovie/">acessar</a></button>
+            <button class="btn-card" onclick="window.location='https://lukkazrx.github.io/AFXMovie/';" value="click here">acessar</button>
           </div>
         </div>
         
@@ -79,7 +86,7 @@
     </section>
 
     <!-- Quarta tela -->
-    <section class="certificate border-gradient espacamento secao">
+    <section id="section-four" class="certificate border-gradient espacamento secao">
         <div>
           <h2>CERTIFICADOS</h2>
           <p>Sempre dei muito valor pro aprendizado e desde que conheci a programação busquei me qualificar.
@@ -113,7 +120,7 @@
     </section>
 
     <!-- Quinta tela -->
-    <section class="border-gradient espacamento secao">
+    <section id="section-five" class="border-gradient espacamento secao">
       <h2>CONTATOS</h2>
       <p>se interessou? entre em contato comigo!</p>
       <div class="contact">
