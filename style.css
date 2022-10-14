@@ -74,6 +74,11 @@ p{
   min-width: 200px;
   max-width: 30%;
   margin: 60px auto 60px auto;
+  animation: dataAnimation 5000ms linear infinite;
+}
+
+@keyframes dataAnimation {
+  100% {transform: rotate(360deg);}
 }
 
 .informations {
@@ -132,7 +137,7 @@ p{
   background-color: #fff;
   border-radius: 10px;
   max-width: 300px;
-  height: 100%;
+  height: 90%;
   margin-top: 25px;
   margin-bottom: 45px;
   display: flex;
@@ -149,7 +154,8 @@ p{
   border: 2px solid #fff;
   width: 90%;
   height: 55%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);}
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
 .card-description {
   width: 90%;
@@ -165,6 +171,7 @@ p{
   border-image: linear-gradient(120deg, #00bfbc, #00e95e) 1;
   background-color: transparent;
 }
+
 
 .btn-card:hover {
   background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
@@ -231,9 +238,10 @@ footer p {
     font-size: 35px;
   }
 
-
   .img-data {
-    max-width: 400px;
+    max-width: 450px;
+    margin: 60px 0 60px 0;
+    margin-right: 0;
   }
   .first-screen {
     display: flex;
@@ -262,6 +270,23 @@ footer p {
   }
   .informations p {
     margin-top: 20px;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about-img {
+    max-width: 250px;
+    margin: 10% 0 10% 10%;
+  }
+  .informations-about {
+    max-width: 50%;
+  }
+
+  .card {
+    height: 100%;
   }
 
   .certificate {
