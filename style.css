@@ -130,6 +130,14 @@ p{
   width: 100%;
 }
 
+#project-link-github {
+  color: #00e95e;
+}
+
+#project-link-github:hover {
+  color:#00bfbc;
+}
+
 .card-container {
   height: 500px;
 }
@@ -186,6 +194,25 @@ p{
   padding-bottom: 5%;
 }
 
+.btn-certification {
+  height: 30px;
+  min-width: 280px;
+  margin: 5%;
+  font-family: 'Inconsolata';
+  border-radius: 8px;
+  border: 2px solid #00e95e;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-certification:hover {
+  background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
+  border: 2px solid #00befc;
+  color: #f4f4f4;
+}
 
 .certificates-img {
   max-width: 420px;
@@ -239,6 +266,7 @@ footer p {
     color: #00e95e;
     cursor: pointer;
   }
+  
 }
 
 @media (min-width: 992px) {
@@ -290,7 +318,7 @@ footer p {
   }
 
   .btn {
-    margin-top: 200px;
+    margin-top: 150px;
     height: 40px;
   }
 
