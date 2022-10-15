@@ -40,7 +40,16 @@ p{
 #distance {
   margin-top: 90px;
 }
+.certificate-container{
+  max-width: 100%;
+  margin-bottom: 5%;
+}
+.certificate-imgs {
+  min-height: 220px;
+  max-height: 360px;
+}
 
+/* certifications page end*/
 .logo {
   padding-left: 10%;
   padding-right: 10%;
