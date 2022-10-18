@@ -148,9 +148,7 @@ p{
 }
 
 /*  section projects */
-.projects {
-  width: 100%;
-}
+
 
 #project-link-github {
   color: #00e95e;
@@ -161,23 +159,32 @@ p{
 }
 
 .card-container {
+  padding: 20px;
+  width: 100%;
   height: 500px;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 12px;
+  scroll-snap-align: start;
+  overflow-x: scroll;
+  gap: 12px; 
 }
 
 .card {
-  position: relative;
   background-color: #fff;
+  flex: 0 0 100%;
   border-radius: 10px;
-  max-width: 300px;
-  height: 90%;
-  margin-top: 25px;
-  margin-bottom: 45px;
+  padding: 0.5%;
+  width: 260px;
+  max-width: 280px;
+  min-height: 360px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .iframecard {
@@ -185,19 +192,22 @@ p{
   border-radius: 10px;
   border: 2px solid #fff;
   width: 90%;
-  height: 55%;
+  height: 220px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-description {
   width: 90%;
   height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .btn-card {
   height: 30px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 5%;
   font-family: 'Inconsolata';
   border: 2px solid #00e95e;
   border-radius: 8px;
