@@ -12,7 +12,20 @@
 
 body {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
 
+body::-webkit-scrollbar {
+  width: 10px;              
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #dedede;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #00e95e, #00bfbc 100%); 
+  border-radius: 20px;       
+  border: 3px solid #dedede;  
 }
 
 .img-size {
@@ -46,9 +59,12 @@ p{
 }
 .certificate-imgs {
   max-width: 40%;
+  transition: 0.2s;
 }
+
 .certificate-imgsY {
   max-width: 30%;
+  transition: 0.8s;
 }
 
 /* certifications page end*/
@@ -167,7 +183,7 @@ p{
   scroll-padding: 12px;
   scroll-snap-align: start;
   overflow-x: scroll;
-  gap: 12px; 
+  gap: 15px; 
 }
 
 .card {
@@ -185,6 +201,12 @@ p{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: transform 0.1s;
+}
+
+.card:hover{
+  transform: scale(1.04);
+  z-index: 1000;
 }
 
 .iframecard {
@@ -260,13 +282,24 @@ p{
   margin-bottom: 60px;
 }
 
-.contact-img {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.btn-contact {
+  min-width: 280px;
+  min-height: 40px;
+  margin: 10px;
+  font-family: 'Inconsolata';
+  border: 2px solid #00e95e;
+  border-radius: 8px;
+}
+
+.btn-contact:hover {
+  background-image: linear-gradient(120deg, #00bfbc 0%, #00e95e 100%);
+  border: 2px solid #00befc;
+  color: #f4f4f4;
+}
+
+.contact-buttons {
   display: flex;
-  justify-content: flex;
-  align-items: center;
-  margin-bottom: 60px;
+  flex-direction: column;
 }
 
 footer p {
@@ -298,10 +331,17 @@ footer p {
     color: #00e95e;
     cursor: pointer;
   }
-  
+  .btn {
+    min-width: 500px;
+  }
+
+  .btn-certification {
+    min-width: 550px;
+  }
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
   .logo {
     display: flex;
     justify-content: space-between;
@@ -397,11 +437,11 @@ footer p {
 
   .contact {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
   }
 
-  .img-size {
-    width: 300px;
+  .btn-contact {
+    min-width: 500px;
   }
 }
